@@ -1,0 +1,58 @@
+<div id="footer">
+        <div class="social-list">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-instagram"></i></a>
+            <a href="#"><i class="ti-youtube"></i></a>
+            <a href="#"><i class="ti-pinterest"></i></a>
+            <a href="#"><i class="ti-twitter"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$(".slick-carousel").slick({});
+</script>
+</body>
+
+</html>
+
+
+
+<script>
+
+
+    var header = document.getElementById('header');
+    var mobileMenu = document.getElementById('mobile-menu');
+    var headerHeight= header.clientHeight;
+
+    // Close, open Menu
+    mobileMenu.onclick = function(){
+        var isClosed = header.clientHeight === headerHeight;
+        if(isClosed){
+            header.style.height = 'auto';
+        }
+        else{
+            header.style.height = null;
+        }
+    }
+    // mobile-menu
+
+    // Automatically close when choosing menu
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for(var i = 0; i<menuItems.length; i++)
+    {
+
+        var menuItem = menuItems[i];
+        menuItem.onclick = function(){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+            if(isParentMenu){
+                // eslint-disable-next-line no-restricted-globals
+                event.preventDefault();
+            }
+            else {
+                header.style.height=null
+            }
+        }
+    }
+</script>

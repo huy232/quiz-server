@@ -1,0 +1,43 @@
+<%-include("./partials/header.ejs")%>
+<div class="register-page height-fixed">
+	<div style="background: url('images/slider/slider1.jpg') no-repeat fixed center; height: 100vh;">
+	<!-- class="center-fit img" alt="slider1"/> -->
+	<div class="register-section vertical-center">
+		<h2>Sign in</h2>
+			<div class="user-info">
+				<form action="/sign-in" method="POST">
+			<div class="row">
+				<div class="username-line">
+					<div class="col-25">
+					<label for="username">Username</label>
+					</div>
+					<div class="col-75">
+					<input type="text" placeholder="Enter username" name="username">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="password-line">
+					<div class="col-25">
+					<label for="password">Password</label>
+					</div>
+					<div class="col-75">
+					<input type="password" placeholder="Enter password" name="password">
+					</div>
+				</div>
+			</div>
+
+				<div class="user-info-button">
+					<button><a href="/sign-up">Sign up</a></button>
+					<button type="submit">Log in</button>
+				</div>
+				</form>
+			</div>
+	</div>
+
+
+</div>
+
+</div>
+
+<%-include ("./partials/footer.ejs")%>

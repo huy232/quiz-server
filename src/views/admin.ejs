@@ -1,0 +1,41 @@
+<%-include("./partials/header.ejs")%>
+<div class="admin-page height-fixed">
+	<div style="background: url('images/slider/slider1.jpg') no-repeat fixed center; height: 100vh;">
+		<div class="admin-section">
+				<div class="admin-control col-25">
+					<button><label>User management</label></button>
+					<button><label>Role management</label></button>
+					<button><label>Quiz management</label></button>
+				</div>
+				<div class="admin-modify col-75">
+					<div class="admin-table">
+						<table>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Role</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Huy</td>
+									<td>User</td>
+									<td class="admin-button">
+										<button class="admin-delete-button">Delete</button>
+										<button class="admin-config-button">Edit</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Quang</td>
+									<td>User</td>
+									<td class="admin-button">
+										<button class="admin-delete-button">Delete</button>
+										<button class="admin-config-button">Edit</button>
+									</td>
+								</tr>
+						</table>
+					</div>
+				</div>
+</div>
+<%-include ("./partials/footer.ejs")%>

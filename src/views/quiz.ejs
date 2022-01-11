@@ -1,0 +1,85 @@
+<%-include("./partials/header.ejs")%>
+
+<div class="content height-fixed">
+	<div class="row">
+			<div class="column left">
+					<div id="clock">
+						 <p>The quiz end in </br><span id="time">5:00</span></p>
+					</div>
+			</div>
+			<div class="column middle">
+					<div class="game-details-container">
+							<h1> Question : <span id="question-number"></span> / 10</h1>
+					</div>
+									<div class="game-quiz-container">
+											<div class="game-question-container">
+													<h1 id="display-question">
+															<p>When is the establish date of SCC</p>
+													</h1>
+											</div>
+
+											<div class="game-options-container">
+
+												 <div class="modal-container" id="option-modal">
+
+															<div class="modal-content-container">
+																	 <h1>Please Pick An Option</h1>
+
+																	 <div class="modal-button-container">
+																			<button onclick="closeOptionModal()">Continue</button>
+																	</div>
+
+															</div>
+
+												 </div>
+
+													<span>
+															<input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+															<label for="option-one" class="option" id="option-one-label">A Answer</label>
+													</span>
+
+
+													<span>
+															<input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+															<label for="option-two" class="option" id="option-two-label">B Answer</label>
+													</span>
+
+
+													<span>
+															<input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+															<label for="option-three" class="option" id="option-three-label">C Answer</label>
+													</span>
+
+
+													<span>
+															<input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+															<label for="option-four" class="option" id="option-four-label">D Answer</label>
+													</span>
+
+
+											</div>
+
+											<div class="next-button-container">
+													<button>Previous Question</button>
+													<button>Next Question</button>
+											</div>
+
+									</div>
+
+
+			</div>
+
+			<div class="column right">
+					<table id="leaderboard">
+							<thead>
+								<th>User</th>
+								<th>Score</th>
+							</thead>
+							<tbody></tbody>
+						</table>
+
+			</div>
+	</div>
+</div>
+
+<%-include ("./partials/footer.ejs")%>

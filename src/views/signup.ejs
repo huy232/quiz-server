@@ -1,0 +1,72 @@
+<%-include("./partials/header.ejs")%>
+<div class="register-page height-fixed">
+	<div style="background: url('images/slider/slider1.jpg') no-repeat fixed center; height: 100vh;">
+	<!-- class="center-fit img" alt="slider1"/> -->
+	<div class="register-section vertical-center">
+		<h2>Sign up</h2>
+			<div class="user-info">
+
+<form action="/sign-up" method="POST">
+			<div class="row">
+				<div class="username-line">
+					<div class="col-25">
+					<label for="username">Username</label>
+					</div>
+					<div class="col-75">
+					<input type="text" placeholder="Enter username" name="username" id="username" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="password-line">
+					<div class="col-25">
+					<label for="password">Password</label>
+					</div>
+					<div class="col-75">
+					<input type="password" placeholder="Enter password" name="password" id="password" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="password-line">
+					<div class="col-25">
+					<label for="password">Re-enter your password</label>
+					</div>
+					<div class="col-75">
+					<input type="password" placeholder="Re-enter password" name="repassword">
+					</div>
+				</div>
+			</div>
+
+				<div class="user-info-button">
+					<button><a href="/">Go back to Home page</a></button>
+					<button type="submit" id="signup-button">Sign Up</button>
+				</div>
+</form>
+			</div>
+	</div>
+</div>
+</div>
+
+<script>
+
+// function handleSubmit(event) {
+// const data = new FormData(event.target);
+// const password = data.get('password');
+// const repassword = data.get('repassword')
+// 	if (password == repassword){
+// 		alert ('Sign up successfully');
+// 	}
+// 	else{
+// 		alert ('Your password is not matched');
+// 		event.preventDefault();
+
+// 	}
+// }
+// const form = document.querySelector('form');
+// form.addEventListener('submit', handleSubmit);
+
+
+</script>
+
+<%-include ("./partials/footer.ejs")%>
